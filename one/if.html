@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+
+ <p v-if="seen">now you see you </p>
+
+</div>
+
+// 在控制台输入 app3.seen = false
+// now you see you 会消失
+<!--这个例子告诉我们不仅可以绑定DOM 文本到数据  也可以绑定dom 结构到数据 而且 vue  也提供-->
+<!--一个强大的过渡效果系统 可以在Vue 插入 删除元素 是自动应用过度效果-->
+
+
+</body>
+<script src="../js/vue.js"></script>
+<script>
+
+    var app3= new Vue({
+        el: '#app',
+        data: {
+            seen: true
+
+        }
+
+    })
+
+</script>
+
+</html>

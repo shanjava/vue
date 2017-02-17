@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ol>
+        <li v-for="todo in todos">
+
+            {{ todo.text }}
+
+        </li>
+
+
+    </ol>
+
+
+</div>item
+在控制台 输入  app4.todos.push({ text: 'new  1111 '})
+
+
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    var app4 =new Vue({
+        el: '#app',
+        data: {
+            todos: [
+
+                {text: 'java'},
+                {text: 'php'},
+                {text: 'js'}
+            ]
+        }
+
+
+    })
+
+
+
+</script>
+</html>
